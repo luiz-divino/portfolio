@@ -1,78 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>meu primeiro projeto</title>
-  </head>
-  <body>
-    <nav class="nav">
-      <ul class="nav-list">
-        <li>
-          <a href="#home">Home</a>
-        </li>
-        <li>
-          <a href="#sobre" class="sobre">Sobre</a>
-        </li>
-        <li>
-          <a href="#project" class="projetos">Projetos</a>
-        </li>
-        <li>
-          <a href="#contatos" class="contatos">Contatos</a>
-        </li>
-      </ul>
-    </nav>
-    <section id="home" class="main">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="Meu primeiro projeto de portfólio, desenvolvido com HTML, CSS e JavaScript.">
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>meu primeiro projeto</title>
+</head>
 
-      
-      <div>
-        <h1>Olá,<br />Seja bem vindo</h1>
-        <p>Luiz Fernando</p>
-        <a href="#project">
-          <button class="call-to-action">Veja meus projetos 👇🏽</button>
-        </a>
+<body>
+  <nav class="nav">
+    <ul class="nav-list">
+      <li>
+        <a href="#inicio">inicio</a>
+      </li>
+      <li>
+        <a href="#sobre" class="sobre">Sobre</a>
+      </li>
+      <li>
+        <a href="#project" class="projetos">Projetos (Em breve)</a>
+      </li>
+      <li>
+        <a href="#contatos" class="contatos">Contatos</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section id="inicio" class="main reveal">
+    <div class="secao-welcome">
+      <h1>Olá,<br />Seja bem vindo</h1>
+      <div class="section-nome">
+        <img src="imagens/codigo1.png" alt="">
+        <p>Luiz Fernando Silva Divino </p>
+        <img src="imagens/codigo3.png" alt="">
       </div>
-    </section>
-
-    <section id="sobre" class="secao-header">
-      <div>
-        <h2>sobre</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Necessitatibus, aspernatur ipsa perspiciatis quidem rerum perferendis
-          id numquam omnis unde earum commodi <br /><br />
-          voluptatibus pariatur excepturi quod amet praesentium natus adipisci?
-          Totam?
-        </p>
+      <div class="icons reveal">
+        <ul>
+          <li><img src="imagens/html.png" alt=""></li>
+          <li><img src="imagens/css-3.png" alt=""></li>
+          <li><img src="imagens/script-java.png" alt=""></li>
+        </ul>
       </div>
-      <img src="imagens/foto1.jpeg" alt="imagem do profissional" id="img-pessoal"/>
-    </section>
+      <a href="#project">
+        <button class="call-to-action reveal">Veja meus projetos 👇🏽</button>
+      </a>
+    </div>
+  </section>
 
-    <section class="projetos">
-      <h2>Meus projetos</h2>
-      <p>Preparando projetos</p>
-      <div class="menu-projects" id="project">
-        <img src="imagens/projeto1.png" alt="imagem do projeto1">
-        <img src="imagens/projeto2.png" alt="imagem do projeto2">
-        <img src="imagens/projeto3.png" alt="imagem do projeto2">
-      </div>
-      <div class="menu-projects">
-        <img src="imagens/projeto3.png" alt="imagem do projeto3">
-        <img src="imagens/projeto2.png" alt="imagem do projeto2">
-        <img src="imagens/projeto1.png" alt="imagem do projeto1 ">
-      </div>
+  <section id="sobre" class="secao-header reveal">
+    <div class="secao-sobre-texto">
+      <img src="imagens/minhafoto2.jpg" alt="minha foto" id="img-pessoal" />
+      <h2>Luiz Divino</h2>
+      <p>
+        Desenvolvedor web
+      </p>
+    </div>
 
-      <button class="action">Faça um orçamento</button>
-    </section>
+  </section>
+  <div id="sobre" class="sobre reveal">
+    <h2>Sobre mim</h2>
+    <div class="sobre-mim">
+      <p>
+        Apaixonado por tecnologia, sou um desenvolvedor web em formação, sempre em busca de novos desafios e
+        aprendizados. Transformo ideias em experiências digitais criativas e funcionais, com dedicação e vontade de
+        evoluir a cada linha de código.
+      </p>
+    </div>
+  </div>
+  <section class="projetos reveal">
+    <h2>Meus projetos</h2>
+    <p>(Em processo...)</p>
+    <div class="menu-projects reveal" id="project">
+      <img src="imagens/projeto1.png" alt="imagem do projeto1" class="reveal">
+      <img src="imagens/projeto2.png" alt="imagem do projeto2" class="reveal">
+      <img src="imagens/projeto3.png" alt="imagem do projeto2" class="reveal">
+    </div>
+    <div class="menu-projects reveal">
+      <img src="imagens/projeto3.png" alt="imagem do projeto3" class="reveal">
+      <img src="imagens/projeto2.png" alt="imagem do projeto2" class="reveal">
+      <img src="imagens/projeto1.png" alt="imagem do projeto1 "class="reveal">
+    </div>
+  </section>
 
-    <footer>
-      <h3>
-        <a href="#">Luiz Fernando Divino</a>
-      </h3>
-      <p>Todos os direitos reservados</p>
-    </footer>
-    <script src="js/script.js"></script>
-  </body>
+  <footer class="reveal">
+    <p>Entre em contato</p>
+    <div class="rodape">
+      <a href="https://github.com/luiz-divino"><img src="imagens/github.png" alt="acessar perfil do github"></a>
+      <a
+        href="https://www.linkedin.com/in/luiz-fernando-divino-55598435b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img
+          src="imagens/logo-do-linkedin.png" alt=""></a>
+      <a href="mailto:nandodivinodev@gmail.com"><img src="imagens/enviar.png" alt="enviar e-mail"></a>
+    </div>
+    <p>@Todos os direitos reservados</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
 </html>

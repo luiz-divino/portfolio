@@ -1,14 +1,18 @@
-const itens = document.querySelectorAll("ul li");
-const minhaFoto = document.querySelector("#img-pessoal");
 
-itens.forEach(function (item, index) {
-    item.addEventListener("click", function () {
-        if (index === 1) {
-            minhaFoto.classList.add("ativo"); // ação para o primeiro item
-        } else if (index === 2) {
+  function revealOnScroll() {
+    const reveals = document.querySelectorAll('.reveal');
+    for (const el of reveals) {
+      const windowHeight = window.innerHeight;
+      const elementTop = el.getBoundingClientRect().top;
+      const elementVisible = 100; // quanto antes do elemento aparecer
 
-        } else {
-            alert("Outro item clicado!");
-        }
-    });
-});
+      if (elementTop < windowHeight - elementVisible) {
+        el.classList.add('active');
+      } else {
+        el.classList.remove('active');
+      }
+    }
+  }
+
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('DOMContentLoaded', revealOnScroll);
