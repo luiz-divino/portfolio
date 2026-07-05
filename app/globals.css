@@ -12,15 +12,20 @@
   --font-mono: var(--font-geist-mono);
 }
 
+@theme {
+  --color-main-background: oklch(0.1831 0.0408 277.26);
+  --color-text-primary: oklch(0.998 0.0033 145.55);
+  --color-text-secondary: oklch(0.6911 0.1222 255.27);
+  --color-button: oklch(0.5855 0.105 259.82);
+  --color-card-background: oklch(0.2311 0.0629 276.4);
+  --color-progress: oklch(0.3828 0.0276 299.38);
+  --color-finished: oklch(0.3772 0.0332 242.11);
+  --color-skills-background: oklch(0.2665 0.0721 274.93);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
