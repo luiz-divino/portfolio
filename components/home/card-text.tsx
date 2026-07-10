@@ -1,7 +1,7 @@
 export function CardTtext() {
   return (
-    <div>
-      <div className="flex gap-4 mb-6">
+    <div className="flex flex-col items-start justify-center gap-4 p-6 lg:p-0">
+      <div className="flex gap-4 mb-3">
         <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-blue-900 font-bold">
           in
         </div>
