@@ -11,15 +11,3 @@
   --color-finished: oklch(0.3772 0.0332 242.11);
   --color-skills-background: oklch(0.2665 0.0721 274.93);
 }
-
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-  html {
-    @apply font-sans;
-  }
-}
