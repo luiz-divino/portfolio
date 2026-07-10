@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function Navbar() {
   return (
-    <nav className="flex justify-between gap-4 p-4 bg-main-background text-white">
+    <nav className="hidden md:flex justify-between gap-4 p-4 bg-main-background text-white">
       <span>
         LOGO
       </span>
