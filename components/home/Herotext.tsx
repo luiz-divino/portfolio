@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function HeroText() {
   const socialLinks = [
     { label: "Linkedin", href: "", icon: "IN" },
@@ -11,15 +13,17 @@ export function HeroText() {
   return (
     <div className="flex flex-col items-start justify-center gap-4 p-6 lg:p-0">
       <div className="flex gap-4 mb-3">
-        <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-blue-900 font-bold">
-          in
-        </div>
-        <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-blue-900 font-bold">
-          gh
-        </div>
-        <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-blue-900 font-bold">
-          @
-        </div>
+        {socialLinks.map((link) => (
+          <Link
+            key={link.label}
+            href={link.href}
+            aria-label={link.label}
+            target="_blank"
+            className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-blue-900 font-bold transition-transform hover:scale-105"
+          >
+            {link.icon}
+          </Link>
+        ))}
       </div>
       <div className="flex flex-col">
         <h1 className="text-5xl md:text-6xl font-extrabold text-white tracking-tight">
