@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className="min-h-full flex flex-col">
+      <body className="flex min-h-dvh flex-col bg-main-background">
         <MobileMenu />
         <Navbar />
         {children}
