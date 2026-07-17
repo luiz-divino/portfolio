@@ -1,13 +1,14 @@
 import Link from "next/link";
-
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 export function HeroText() {
   const socialLinks = [
-    { label: "Linkedin", href: "", icon: "IN" },
-    { label: "Github", href: "", icon: "GH" },
+    { label: "Linkedin", href: "", icon: <FaLinkedinIn className="w-5 h-5" /> },
+    { label: "Github", href: "", icon: <FaGithub className="w-5 h-5"/> },
     {
       label: "Email",
       href: "mailto:luizfernandodivino.dev@gmail.com",
-      icon: "@",
+      icon: <MdEmail className="w-5 h-5"/>,
     },
   ];
   return (
