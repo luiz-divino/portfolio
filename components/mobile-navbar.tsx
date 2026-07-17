@@ -44,7 +44,7 @@ export default function MobileMenu() {
         {/* Links de Navegação */}
         <nav className="flex flex-col items-center space-y-8">
           <Link
-            href="/home"
+            href="/"
             onClick={closeMenu}
             className="text-2xl font-semibold text-white hover:text-gray-600"
           >
