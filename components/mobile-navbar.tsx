@@ -19,17 +19,17 @@ export default function MobileMenu() {
         aria-label="Alternar menu mobile"
       >
         <span
-          className={`block h-0.5 w-6 bg-black transition-transform duration-300 ease-in-out ${
+          className={`block h-0.5 w-6 bg-white transition-transform duration-300 ease-in-out ${
             isOpen ? "translate-y-2 rotate-45" : ""
           }`}
         />
         <span
-          className={`block h-0.5 w-6 bg-black transition-opacity duration-300 ease-in-out ${
+          className={`block h-0.5 w-6 bg-white transition-opacity duration-300 ease-in-out ${
             isOpen ? "opacity-0" : ""
           }`}
         />
         <span
-          className={`block h-0.5 w-6 bg-black transition-transform duration-300 ease-in-out ${
+          className={`block h-0.5 w-6 bg-white transition-transform duration-300 ease-in-out ${
             isOpen ? "-translate-y-2 -rotate-45" : ""
           }`}
         />
@@ -37,7 +37,7 @@ export default function MobileMenu() {
 
       {/* Painel do Menu Overlay */}
       <div
-        className={`fixed inset-0 z-40 flex flex-col items-center justify-center bg-white transition-transform duration-300 ease-in-out ${
+        className={`fixed inset-0 z-40 flex flex-col items-center justify-center bg-card-background transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -46,35 +46,35 @@ export default function MobileMenu() {
           <Link
             href="/home"
             onClick={closeMenu}
-            className="text-2xl font-semibold text-black hover:text-gray-600"
+            className="text-2xl font-semibold text-white hover:text-gray-600"
           >
             Início
           </Link>
           <Link
             href="/about"
             onClick={closeMenu}
-            className="text-2xl font-semibold text-black hover:text-gray-600"
+            className="text-2xl font-semibold text-white hover:text-gray-600"
           >
             Sobre
           </Link>
           <Link
             href="/project"
             onClick={closeMenu}
-            className="text-2xl font-semibold text-black hover:text-gray-600"
+            className="text-2xl font-semibold text-white hover:text-gray-600"
           >
             Projetos
           </Link>
           <Link
             href="/skills"
             onClick={closeMenu}
-            className="text-2xl font-semibold text-black hover:text-gray-600"
+            className="text-2xl font-semibold text-white hover:text-gray-600"
           >
             Habilidades
           </Link>
           <Link
             href="/certifications"
             onClick={closeMenu}
-            className="text-2xl font-semibold text-black hover:text-gray-600"
+            className="text-2xl font-semibold text-white hover:text-gray-600"
           >
             Certificações
           </Link>
